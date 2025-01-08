@@ -1,0 +1,26 @@
+## catalog of libraries and plugins used to build the UBench project
+
+[versions]
+
+jme = "3.7.0-stable"
+jolt-jni = "0.9.4"
+
+[libraries]
+
+commons-math3 = "org.apache.commons:commons-math3:3.6.1"
+jme3-core = { module = "org.jmonkeyengine:jme3-core", version.ref = "jme" }
+
+jolt-jni-linux64 = { module = "com.github.stephengold:jolt-jni-Linux64", version.ref = "jolt-jni" }
+jolt-jni-linuxarm32hf = { module = "com.github.stephengold:jolt-jni-Linux_ARM32hf", version.ref = "jolt-jni" }
+jolt-jni-linuxarm64 = { module = "com.github.stephengold:jolt-jni-Linux_ARM64", version.ref = "jolt-jni" }
+jolt-jni-macosx64 = { module = "com.github.stephengold:jolt-jni-MacOSX64", version.ref = "jolt-jni" }
+jolt-jni-macosxarm64 = { module = "com.github.stephengold:jolt-jni-MacOSX_ARM64", version.ref = "jolt-jni" }
+jolt-jni-windows64 = { module = "com.github.stephengold:jolt-jni-Windows64", version.ref = "jolt-jni" }
+
+jsnaploader = "io.github.electrostat-lab:snaploader:1.0.0-stable"
+
+[bundles]
+
+[plugins]
+
+jmh = { id = "me.champeau.jmh", version = "0.7.2" }

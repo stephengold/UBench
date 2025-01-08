@@ -1,0 +1,35 @@
+// Gradle script to build and run the UBench project
+
+plugins {
+    id "java-library"       // to build JVM libraries
+    alias(libs.plugins.jmh) // to integrate the JMH benchmarking framework
+}
+
+dependencies {
+    implementation(libs.commons.math3)
+    implementation(libs.jme3.core)
+    implementation(libs.jolt.jni.linux64)
+    implementation(libs.jsnaploader)
+
+    runtimeOnly(variantOf(libs.jolt.jni.linux64){ classifier("ReleaseSp") })
+    runtimeOnly(variantOf(libs.jolt.jni.linuxarm32hf){ classifier("ReleaseSp") })
+    runtimeOnly(variantOf(libs.jolt.jni.linuxarm64){ classifier("ReleaseSp") })
+    runtimeOnly(variantOf(libs.jolt.jni.macosx64){ classifier("ReleaseSp") })
+    runtimeOnly(variantOf(libs.jolt.jni.macosxarm64){ classifier("ReleaseSp") })
+    runtimeOnly(variantOf(libs.jolt.jni.windows64){ classifier("ReleaseSp") })
+}
+
+jmh {
+    fork = 1
+    iterations = 6
+    warmupIterations = 2
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+tasks.register("run") {
+    dependsOn "jmh"
+}
