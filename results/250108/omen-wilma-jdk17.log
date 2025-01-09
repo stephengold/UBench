@@ -1,0 +1,668 @@
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Apache.acos
+
+# Run progress: 0.00% complete, ETA 00:26:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 4196016.280 ops/s
+# Warmup Iteration   2: 4183125.725 ops/s
+Iteration   1: 4222368.140 ops/s
+Iteration   2: 4204803.002 ops/s
+Iteration   3: 4202653.267 ops/s
+Iteration   4: 4208376.503 ops/s
+Iteration   5: 4199597.212 ops/s
+Iteration   6: 4191741.878 ops/s
+
+
+Result "com.github.stephengold.ubench.Apache.acos":
+  4204923.334 ±(99.9%) 28694.153 ops/s [Average]
+  (min, avg, max) = (4191741.878, 4204923.334, 4222368.140), stdev = 10232.612
+  CI (99.9%): [4176229.180, 4233617.487] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Apache.atan
+
+# Run progress: 5.00% complete, ETA 00:25:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 6735341.808 ops/s
+# Warmup Iteration   2: 6713683.617 ops/s
+Iteration   1: 6718528.455 ops/s
+Iteration   2: 6720051.593 ops/s
+Iteration   3: 6628689.515 ops/s
+Iteration   4: 6608026.279 ops/s
+Iteration   5: 6695904.847 ops/s
+Iteration   6: 6694133.922 ops/s
+
+
+Result "com.github.stephengold.ubench.Apache.atan":
+  6677555.769 ±(99.9%) 133418.245 ops/s [Average]
+  (min, avg, max) = (6608026.279, 6677555.769, 6720051.593), stdev = 47578.232
+  CI (99.9%): [6544137.523, 6810974.014] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Apache.cos
+
+# Run progress: 10.00% complete, ETA 00:24:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 16565017.154 ops/s
+# Warmup Iteration   2: 16625646.099 ops/s
+Iteration   1: 16768473.712 ops/s
+Iteration   2: 16712297.837 ops/s
+Iteration   3: 16768557.008 ops/s
+Iteration   4: 16731214.481 ops/s
+Iteration   5: 16693141.662 ops/s
+Iteration   6: 16813887.226 ops/s
+
+
+Result "com.github.stephengold.ubench.Apache.cos":
+  16747928.654 ±(99.9%) 123821.244 ops/s [Average]
+  (min, avg, max) = (16693141.662, 16747928.654, 16813887.226), stdev = 44155.848
+  CI (99.9%): [16624107.410, 16871749.899] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Apache.exp
+
+# Run progress: 15.00% complete, ETA 00:22:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 12033837.709 ops/s
+# Warmup Iteration   2: 11981076.995 ops/s
+Iteration   1: 12079878.643 ops/s
+Iteration   2: 12174841.271 ops/s
+Iteration   3: 12108305.034 ops/s
+Iteration   4: 12052800.339 ops/s
+Iteration   5: 12063576.855 ops/s
+Iteration   6: 12017263.873 ops/s
+
+
+Result "com.github.stephengold.ubench.Apache.exp":
+  12082777.669 ±(99.9%) 152022.753 ops/s [Average]
+  (min, avg, max) = (12017263.873, 12082777.669, 12174841.271), stdev = 54212.778
+  CI (99.9%): [11930754.916, 12234800.422] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Apache.sin
+
+# Run progress: 20.00% complete, ETA 00:21:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 10293538.179 ops/s
+# Warmup Iteration   2: 10275811.725 ops/s
+Iteration   1: 10229770.381 ops/s
+Iteration   2: 10260768.813 ops/s
+Iteration   3: 10238942.940 ops/s
+Iteration   4: 10235059.517 ops/s
+Iteration   5: 10229021.632 ops/s
+Iteration   6: 10231587.158 ops/s
+
+
+Result "com.github.stephengold.ubench.Apache.sin":
+  10237525.073 ±(99.9%) 33558.123 ops/s [Average]
+  (min, avg, max) = (10229021.632, 10237525.073, 10260768.813), stdev = 11967.150
+  CI (99.9%): [10203966.951, 10271083.196] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Apache.sqrt
+
+# Run progress: 25.00% complete, ETA 00:20:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 503968839.041 ops/s
+# Warmup Iteration   2: 505208107.003 ops/s
+Iteration   1: 506569629.393 ops/s
+Iteration   2: 508805980.910 ops/s
+Iteration   3: 505958991.484 ops/s
+Iteration   4: 505633102.050 ops/s
+Iteration   5: 499330418.597 ops/s
+Iteration   6: 501025158.533 ops/s
+
+
+Result "com.github.stephengold.ubench.Apache.sqrt":
+  504553880.161 ±(99.9%) 10112123.670 ops/s [Average]
+  (min, avg, max) = (499330418.597, 504553880.161, 508805980.910), stdev = 3606080.712
+  CI (99.9%): [494441756.491, 514666003.831] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Jme.acos
+
+# Run progress: 30.00% complete, ETA 00:18:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 10216657.602 ops/s
+# Warmup Iteration   2: 10274180.999 ops/s
+Iteration   1: 10346033.675 ops/s
+Iteration   2: 10313253.958 ops/s
+Iteration   3: 10314684.003 ops/s
+Iteration   4: 10299275.650 ops/s
+Iteration   5: 10297088.402 ops/s
+Iteration   6: 10318714.273 ops/s
+
+
+Result "com.github.stephengold.ubench.Jme.acos":
+  10314841.660 ±(99.9%) 49340.356 ops/s [Average]
+  (min, avg, max) = (10297088.402, 10314841.660, 10346033.675), stdev = 17595.246
+  CI (99.9%): [10265501.305, 10364182.016] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Jme.atan
+
+# Run progress: 35.00% complete, ETA 00:17:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 8383904.930 ops/s
+# Warmup Iteration   2: 10768134.441 ops/s
+Iteration   1: 10659851.395 ops/s
+Iteration   2: 10675976.248 ops/s
+Iteration   3: 10656215.606 ops/s
+Iteration   4: 10667328.915 ops/s
+Iteration   5: 10679782.008 ops/s
+Iteration   6: 10700692.149 ops/s
+
+
+Result "com.github.stephengold.ubench.Jme.atan":
+  10673307.720 ±(99.9%) 45353.394 ops/s [Average]
+  (min, avg, max) = (10656215.606, 10673307.720, 10700692.149), stdev = 16173.457
+  CI (99.9%): [10627954.326, 10718661.114] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Jme.cos
+
+# Run progress: 40.00% complete, ETA 00:16:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 18039068.804 ops/s
+# Warmup Iteration   2: 18511470.023 ops/s
+Iteration   1: 18146148.672 ops/s
+Iteration   2: 18060902.771 ops/s
+Iteration   3: 18138159.527 ops/s
+Iteration   4: 18167483.711 ops/s
+Iteration   5: 18086220.881 ops/s
+Iteration   6: 18181594.925 ops/s
+
+
+Result "com.github.stephengold.ubench.Jme.cos":
+  18130085.081 ±(99.9%) 132037.700 ops/s [Average]
+  (min, avg, max) = (18060902.771, 18130085.081, 18181594.925), stdev = 47085.916
+  CI (99.9%): [17998047.381, 18262122.781] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Jme.exp
+
+# Run progress: 45.00% complete, ETA 00:14:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 24951526.467 ops/s
+# Warmup Iteration   2: 25770173.639 ops/s
+Iteration   1: 26332697.510 ops/s
+Iteration   2: 26265054.249 ops/s
+Iteration   3: 26193656.277 ops/s
+Iteration   4: 26323408.371 ops/s
+Iteration   5: 26220094.578 ops/s
+Iteration   6: 26064347.750 ops/s
+
+
+Result "com.github.stephengold.ubench.Jme.exp":
+  26233209.789 ±(99.9%) 278444.694 ops/s [Average]
+  (min, avg, max) = (26064347.750, 26233209.789, 26332697.510), stdev = 99296.060
+  CI (99.9%): [25954765.095, 26511654.483] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Jme.pow
+
+# Run progress: 50.00% complete, ETA 00:13:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 17307687.292 ops/s
+# Warmup Iteration   2: 17626731.199 ops/s
+Iteration   1: 19194631.056 ops/s
+Iteration   2: 19227105.418 ops/s
+Iteration   3: 19218010.479 ops/s
+Iteration   4: 19168662.577 ops/s
+Iteration   5: 19201304.931 ops/s
+Iteration   6: 19216314.871 ops/s
+
+
+Result "com.github.stephengold.ubench.Jme.pow":
+  19204338.222 ±(99.9%) 59153.022 ops/s [Average]
+  (min, avg, max) = (19168662.577, 19204338.222, 19227105.418), stdev = 21094.537
+  CI (99.9%): [19145185.200, 19263491.244] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Jme.sin
+
+# Run progress: 55.00% complete, ETA 00:12:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 18232020.410 ops/s
+# Warmup Iteration   2: 18565694.305 ops/s
+Iteration   1: 18371407.310 ops/s
+Iteration   2: 18280351.040 ops/s
+Iteration   3: 18357080.039 ops/s
+Iteration   4: 18271971.381 ops/s
+Iteration   5: 18309198.924 ops/s
+Iteration   6: 18339649.607 ops/s
+
+
+Result "com.github.stephengold.ubench.Jme.sin":
+  18321609.717 ±(99.9%) 114825.556 ops/s [Average]
+  (min, avg, max) = (18271971.381, 18321609.717, 18371407.310), stdev = 40947.899
+  CI (99.9%): [18206784.161, 18436435.273] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.Jme.sqrt
+
+# Run progress: 60.00% complete, ETA 00:10:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 508951696.930 ops/s
+# Warmup Iteration   2: 505143486.940 ops/s
+Iteration   1: 506007833.729 ops/s
+Iteration   2: 506186598.002 ops/s
+Iteration   3: 504961972.142 ops/s
+Iteration   4: 506674806.574 ops/s
+Iteration   5: 503694514.095 ops/s
+Iteration   6: 502038405.833 ops/s
+
+
+Result "com.github.stephengold.ubench.Jme.sqrt":
+  504927355.062 ±(99.9%) 4964889.466 ops/s [Average]
+  (min, avg, max) = (502038405.833, 504927355.062, 506674806.574), stdev = 1770527.411
+  CI (99.9%): [499962465.597, 509892244.528] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.JoltJni.acos
+
+# Run progress: 65.00% complete, ETA 00:09:21
+# Fork: 1 of 1
+Jan 08, 2025 4:00:09 PM electrostatic4j.snaploader.library.LibraryExtractor initialize(int)
+INFO: File extractor initialized with hash key #1755862340
+Jan 08, 2025 4:00:09 PM electrostatic4j.snaploader.library.LibraryLocator initialize(int)
+INFO: File locator initialized using classpath routine with hash key #685918388
+Jan 08, 2025 4:00:09 PM electrostatic4j.snaploader.NativeBinaryLoader$2 preInitLibraryLocator
+INFO: Locating native libraries has succeeded!
+Jan 08, 2025 4:00:09 PM electrostatic4j.snaploader.NativeBinaryLoader cleanExtractBinary
+INFO: File extractor handler initialized!
+Jan 08, 2025 4:00:09 PM electrostatic4j.snaploader.library.LibraryLocator close
+INFO: File locator #685918388 resources closed!
+Jan 08, 2025 4:00:09 PM electrostatic4j.snaploader.library.LibraryExtractor close
+INFO: Delegation for file locator resources closure has succeeded!
+Jan 08, 2025 4:00:09 PM electrostatic4j.snaploader.library.LibraryExtractor close
+INFO: File extractor #1755862340 resources closed!
+Jan 08, 2025 4:00:09 PM electrostatic4j.snaploader.NativeBinaryLoader$1 cleanExtractBinary
+INFO: Extracted successfully to /mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/libjoltjni.so
+Jan 08, 2025 4:00:09 PM electrostatic4j.snaploader.NativeBinaryLoader loadBinary
+INFO: Successfully loaded library: /mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/libjoltjni.so
+# Warmup Iteration   1: 30224769.752 ops/s
+# Warmup Iteration   2: 31366263.332 ops/s
+Iteration   1: 31136398.247 ops/s
+Iteration   2: 31410691.853 ops/s
+Iteration   3: 31486243.565 ops/s
+Iteration   4: 31399235.042 ops/s
+Iteration   5: 31549577.497 ops/s
+Iteration   6: 31586580.030 ops/s
+
+
+Result "com.github.stephengold.ubench.JoltJni.acos":
+  31428121.039 ±(99.9%) 451255.451 ops/s [Average]
+  (min, avg, max) = (31136398.247, 31428121.039, 31586580.030), stdev = 160922.041
+  CI (99.9%): [30976865.588, 31879376.490] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.JoltJni.atan
+
+# Run progress: 70.00% complete, ETA 00:08:00
+# Fork: 1 of 1
+Jan 08, 2025 4:01:29 PM electrostatic4j.snaploader.NativeBinaryLoader loadBinary
+INFO: Successfully loaded library: /mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/libjoltjni.so
+# Warmup Iteration   1: 23023736.286 ops/s
+# Warmup Iteration   2: 23217712.305 ops/s
+Iteration   1: 23201534.970 ops/s
+Iteration   2: 23196766.458 ops/s
+Iteration   3: 23263264.721 ops/s
+Iteration   4: 23121873.205 ops/s
+Iteration   5: 23308494.207 ops/s
+Iteration   6: 23526907.002 ops/s
+
+
+Result "com.github.stephengold.ubench.JoltJni.atan":
+  23269806.761 ±(99.9%) 395619.591 ops/s [Average]
+  (min, avg, max) = (23121873.205, 23269806.761, 23526907.002), stdev = 141081.757
+  CI (99.9%): [22874187.169, 23665426.352] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.JoltJni.cos
+
+# Run progress: 75.00% complete, ETA 00:06:40
+# Fork: 1 of 1
+Jan 08, 2025 4:02:49 PM electrostatic4j.snaploader.NativeBinaryLoader loadBinary
+INFO: Successfully loaded library: /mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/libjoltjni.so
+# Warmup Iteration   1: 27404915.961 ops/s
+# Warmup Iteration   2: 27319910.296 ops/s
+Iteration   1: 27723418.629 ops/s
+Iteration   2: 27768591.349 ops/s
+Iteration   3: 27601082.951 ops/s
+Iteration   4: 27521842.954 ops/s
+Iteration   5: 27554910.652 ops/s
+Iteration   6: 27538994.141 ops/s
+
+
+Result "com.github.stephengold.ubench.JoltJni.cos":
+  27618140.113 ±(99.9%) 290190.053 ops/s [Average]
+  (min, avg, max) = (27521842.954, 27618140.113, 27768591.349), stdev = 103484.568
+  CI (99.9%): [27327950.059, 27908330.166] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.JoltJni.exp
+
+# Run progress: 80.00% complete, ETA 00:05:20
+# Fork: 1 of 1
+Jan 08, 2025 4:04:09 PM electrostatic4j.snaploader.NativeBinaryLoader loadBinary
+INFO: Successfully loaded library: /mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/libjoltjni.so
+# Warmup Iteration   1: 26534961.685 ops/s
+# Warmup Iteration   2: 26372358.819 ops/s
+Iteration   1: 26570457.498 ops/s
+Iteration   2: 26511559.583 ops/s
+Iteration   3: 26574479.215 ops/s
+Iteration   4: 26508186.450 ops/s
+Iteration   5: 26534658.312 ops/s
+Iteration   6: 26493331.432 ops/s
+
+
+Result "com.github.stephengold.ubench.JoltJni.exp":
+  26532112.082 ±(99.9%) 95264.857 ops/s [Average]
+  (min, avg, max) = (26493331.432, 26532112.082, 26574479.215), stdev = 33972.366
+  CI (99.9%): [26436847.225, 26627376.938] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.JoltJni.pow
+
+# Run progress: 85.00% complete, ETA 00:04:00
+# Fork: 1 of 1
+Jan 08, 2025 4:05:30 PM electrostatic4j.snaploader.NativeBinaryLoader loadBinary
+INFO: Successfully loaded library: /mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/libjoltjni.so
+# Warmup Iteration   1: 29503566.584 ops/s
+# Warmup Iteration   2: 29744282.178 ops/s
+Iteration   1: 29635514.196 ops/s
+Iteration   2: 29371286.353 ops/s
+Iteration   3: 29236571.792 ops/s
+Iteration   4: 29271608.295 ops/s
+Iteration   5: 28957630.145 ops/s
+Iteration   6: 29221878.814 ops/s
+
+
+Result "com.github.stephengold.ubench.JoltJni.pow":
+  29282414.933 ±(99.9%) 619395.752 ops/s [Average]
+  (min, avg, max) = (28957630.145, 29282414.933, 29635514.196), stdev = 220882.492
+  CI (99.9%): [28663019.181, 29901810.685] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.JoltJni.sin
+
+# Run progress: 90.00% complete, ETA 00:02:40
+# Fork: 1 of 1
+Jan 08, 2025 4:06:50 PM electrostatic4j.snaploader.NativeBinaryLoader loadBinary
+INFO: Successfully loaded library: /mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/libjoltjni.so
+# Warmup Iteration   1: 27210658.925 ops/s
+# Warmup Iteration   2: 27005645.557 ops/s
+Iteration   1: 27289938.760 ops/s
+Iteration   2: 27379918.123 ops/s
+Iteration   3: 27238287.552 ops/s
+Iteration   4: 27327816.641 ops/s
+Iteration   5: 27407646.511 ops/s
+Iteration   6: 27274377.088 ops/s
+
+
+Result "com.github.stephengold.ubench.JoltJni.sin":
+  27319664.112 ±(99.9%) 181708.564 ops/s [Average]
+  (min, avg, max) = (27238287.552, 27319664.112, 27407646.511), stdev = 64799.024
+  CI (99.9%): [27137955.548, 27501372.677] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 17.0.12, OpenJDK 64-Bit Server VM, 17.0.12+7
+# VM invoker: /usr/lib/jvm/jdk-17.0.12+7/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/tmp/jmh -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 10 s each
+# Measurement: 6 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.stephengold.ubench.JoltJni.sqrt
+
+# Run progress: 95.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+Jan 08, 2025 4:08:10 PM electrostatic4j.snaploader.NativeBinaryLoader loadBinary
+INFO: Successfully loaded library: /mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/libjoltjni.so
+# Warmup Iteration   1: 40480212.450 ops/s
+# Warmup Iteration   2: 43493164.862 ops/s
+Iteration   1: 41159373.994 ops/s
+Iteration   2: 41463558.841 ops/s
+Iteration   3: 41456629.904 ops/s
+Iteration   4: 41282953.632 ops/s
+Iteration   5: 41237256.652 ops/s
+Iteration   6: 41322785.367 ops/s
+
+
+Result "com.github.stephengold.ubench.JoltJni.sqrt":
+  41320426.398 ±(99.9%) 339533.976 ops/s [Average]
+  (min, avg, max) = (41159373.994, 41320426.398, 41463558.841), stdev = 121081.087
+  CI (99.9%): [40980892.422, 41659960.374] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:26:43
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark      Mode  Cnt          Score          Error  Units
+Apache.acos   thrpt    6    4204923.334 ±    28694.153  ops/s
+Apache.atan   thrpt    6    6677555.769 ±   133418.245  ops/s
+Apache.cos    thrpt    6   16747928.654 ±   123821.244  ops/s
+Apache.exp    thrpt    6   12082777.669 ±   152022.753  ops/s
+Apache.sin    thrpt    6   10237525.073 ±    33558.123  ops/s
+Apache.sqrt   thrpt    6  504553880.161 ± 10112123.670  ops/s
+Jme.acos      thrpt    6   10314841.660 ±    49340.356  ops/s
+Jme.atan      thrpt    6   10673307.720 ±    45353.394  ops/s
+Jme.cos       thrpt    6   18130085.081 ±   132037.700  ops/s
+Jme.exp       thrpt    6   26233209.789 ±   278444.694  ops/s
+Jme.pow       thrpt    6   19204338.222 ±    59153.022  ops/s
+Jme.sin       thrpt    6   18321609.717 ±   114825.556  ops/s
+Jme.sqrt      thrpt    6  504927355.062 ±  4964889.466  ops/s
+JoltJni.acos  thrpt    6   31428121.039 ±   451255.451  ops/s
+JoltJni.atan  thrpt    6   23269806.761 ±   395619.591  ops/s
+JoltJni.cos   thrpt    6   27618140.113 ±   290190.053  ops/s
+JoltJni.exp   thrpt    6   26532112.082 ±    95264.857  ops/s
+JoltJni.pow   thrpt    6   29282414.933 ±   619395.752  ops/s
+JoltJni.sin   thrpt    6   27319664.112 ±   181708.564  ops/s
+JoltJni.sqrt  thrpt    6   41320426.398 ±   339533.976  ops/s
+
+Benchmark result is saved to /mnt/49418dfb-b5e4-4422-8296-deb3dc450a4f/home/sgold/NetBeansProjects/UBench/build/results/jmh/results.txt

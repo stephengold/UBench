@@ -1,0 +1,21 @@
+Benchmark      Mode  Cnt          Score          Error  Units
+Apache.acos   thrpt    6    4204923.334 ±    28694.153  ops/s
+Apache.atan   thrpt    6    6677555.769 ±   133418.245  ops/s
+Apache.cos    thrpt    6   16747928.654 ±   123821.244  ops/s
+Apache.exp    thrpt    6   12082777.669 ±   152022.753  ops/s
+Apache.sin    thrpt    6   10237525.073 ±    33558.123  ops/s
+Apache.sqrt   thrpt    6  504553880.161 ± 10112123.670  ops/s
+Jme.acos      thrpt    6   10314841.660 ±    49340.356  ops/s
+Jme.atan      thrpt    6   10673307.720 ±    45353.394  ops/s
+Jme.cos       thrpt    6   18130085.081 ±   132037.700  ops/s
+Jme.exp       thrpt    6   26233209.789 ±   278444.694  ops/s
+Jme.pow       thrpt    6   19204338.222 ±    59153.022  ops/s
+Jme.sin       thrpt    6   18321609.717 ±   114825.556  ops/s
+Jme.sqrt      thrpt    6  504927355.062 ±  4964889.466  ops/s
+JoltJni.acos  thrpt    6   31428121.039 ±   451255.451  ops/s
+JoltJni.atan  thrpt    6   23269806.761 ±   395619.591  ops/s
+JoltJni.cos   thrpt    6   27618140.113 ±   290190.053  ops/s
+JoltJni.exp   thrpt    6   26532112.082 ±    95264.857  ops/s
+JoltJni.pow   thrpt    6   29282414.933 ±   619395.752  ops/s
+JoltJni.sin   thrpt    6   27319664.112 ±   181708.564  ops/s
+JoltJni.sqrt  thrpt    6   41320426.398 ±   339533.976  ops/s
