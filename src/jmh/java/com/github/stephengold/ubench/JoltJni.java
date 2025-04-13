@@ -55,16 +55,14 @@ public class JoltJni {
             new NativeDynamicLibrary("osx/x86-64/com/github/stephengold", PlatformPredicate.MACOS_X86_64),
             new NativeDynamicLibrary("windows/x86-64/com/github/stephengold", PlatformPredicate.WIN_X86_64)
         };
-        LibraryInfo info = new LibraryInfo(
-                new DirectoryPath("linux/x86-64/com/github/stephengold"),
-                "joltjni", DirectoryPath.USER_DIR);
+        LibraryInfo info = new LibraryInfo(null, "joltjni", DirectoryPath.USER_DIR);
         NativeBinaryLoader loader = new NativeBinaryLoader(info);
         loader.registerNativeLibraries(libraries).initPlatformLibrary();
         loader.setLoggingEnabled(true);
         loader.setRetryWithCleanExtraction(true);
 
         try {
-            loader.loadLibrary(LoadingCriterion.INCREMENTAL_LOADING);
+            loader.loadLibrary(LoadingCriterion.CLEAN_EXTRACTION);
         } catch (Exception e) {
             throw new IllegalStateException(
                     "Failed to load the jolt-jni native library!");
