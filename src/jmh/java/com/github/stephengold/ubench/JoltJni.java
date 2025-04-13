@@ -21,13 +21,27 @@ SOFTWARE.
  */
 package com.github.stephengold.ubench;
 
-import com.github.stephengold.joltjni.std.Std;
+import com.github.stephengold.joltjni.Body;
+import com.github.stephengold.joltjni.BodyCreationSettings;
+import com.github.stephengold.joltjni.BodyInterface;
+import com.github.stephengold.joltjni.BoxShape;
+import com.github.stephengold.joltjni.Jolt;
+import com.github.stephengold.joltjni.JoltPhysicsObject;
+import com.github.stephengold.joltjni.MapObj2Bp;
+import com.github.stephengold.joltjni.ObjVsBpFilter;
+import com.github.stephengold.joltjni.ObjVsObjFilter;
+import com.github.stephengold.joltjni.PhysicsSystem;
+import com.github.stephengold.joltjni.enumerate.EActivation;
+import com.github.stephengold.joltjni.enumerate.EOverrideMassProperties;
+import com.github.stephengold.joltjni.readonly.ConstShape;
+import com.github.stephengold.joltjni.readonly.QuatArg;
 import electrostatic4j.snaploader.LibraryInfo;
 import electrostatic4j.snaploader.LoadingCriterion;
 import electrostatic4j.snaploader.NativeBinaryLoader;
 import electrostatic4j.snaploader.filesystem.DirectoryPath;
 import electrostatic4j.snaploader.platform.NativeDynamicLibrary;
 import electrostatic4j.snaploader.platform.util.PlatformPredicate;
+import java.io.PrintStream;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
@@ -42,6 +56,8 @@ import org.openjdk.jmh.infra.Blackhole;
  */
 @State(Scope.Benchmark)
 public class JoltJni {
+
+    static Body box;
 
     /**
      * Load the jolt-jni native library using SnapLoader.
@@ -67,125 +83,111 @@ public class JoltJni {
             throw new IllegalStateException(
                     "Failed to load the jolt-jni native library!");
         }
+
+        JoltPhysicsObject.startCleaner(); // to free Jolt objects automatically
+        Jolt.registerDefaultAllocator();
+        Jolt.installDefaultAssertCallback();
+        Jolt.installDefaultTraceCallback();
+        boolean success = Jolt.newFactory();
+        assert success;
+        Jolt.registerTypes();
+
+        printLibraryInfo(System.out);
+        if (areAssertionsEnabled()) {
+            System.out.println("Warning: assertions are enabled.");
+        }
+
+        ConstShape boxShape = new BoxShape(1f);
+        BodyCreationSettings boxBcs = new BodyCreationSettings()
+                .setOverrideMassProperties(EOverrideMassProperties.CalculateInertia)
+                .setShape(boxShape);
+        boxBcs.getMassPropertiesOverride().setMass(1f);
+
+        // Create and add a box:
+        PhysicsSystem physicsSystem = createSystem();
+        BodyInterface bi = physicsSystem.getBodyInterface();
+        boxBcs.setPosition(1f, 2f, 3f);
+        box = bi.createBody(boxBcs);
+        bi.addBody(box, EActivation.Activate);
     }
 
     /**
-     * Test {@code Std.acos()} for single-precision arc cosines.
+     * Test {@code Quat} creation and access.
      *
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
     @Benchmark
-    public void acos(Blackhole hole, TestData data) {
-        float ww = Std.acos(data.w);
-        hole.consume(ww);
-        float xx = Std.acos(data.x);
-        hole.consume(xx);
-        float yy = Std.acos(data.y);
-        hole.consume(yy);
-    }
+    public void quat(Blackhole hole, TestData data) {
+        QuatArg q = box.getRotation();
 
-    /**
-     * Test {@code Std.atan()} for single-precision arc tangents.
-     *
-     * @param hole the consumer to use (not null)
-     * @param data the test data to use (not null)
-     */
-    @Benchmark
-    public void atan(Blackhole hole, TestData data) {
-        float ww = Std.atan(data.w);
+        float ww = q.getW();
         hole.consume(ww);
-        float xx = Std.atan(data.x);
+        float xx = q.getX();
         hole.consume(xx);
-        float yy = Std.atan(data.y);
+        float yy = q.getY();
         hole.consume(yy);
-        float zz = Std.atan(data.z);
+        float zz = q.getZ();
         hole.consume(zz);
     }
 
     /**
-     * Test {@code Std.cos()} for single-precision cosine ratios.
+     * Test whether assertions are enabled.
      *
-     * @param hole the consumer to use (not null)
-     * @param data the test data to use (not null)
+     * @return true if enabled, otherwise false
      */
-    @Benchmark
-    public void cos(Blackhole hole, TestData data) {
-        float ww = Std.cos(data.w);
-        hole.consume(ww);
-        float xx = Std.cos(data.x);
-        hole.consume(xx);
-        float yy = Std.cos(data.y);
-        hole.consume(yy);
-        float zz = Std.cos(data.z);
-        hole.consume(zz);
+    private static boolean areAssertionsEnabled() {
+        boolean enabled = false;
+        assert enabled = true; // Note: intentional side effect.
+
+        return enabled;
     }
 
     /**
-     * Test {@code Std.exp()} for single-precision exponentials.
+     * Create the PhysicsSystem. Invoked once during initialization.
      *
-     * @param hole the consumer to use (not null)
-     * @param data the test data to use (not null)
+     * @return a new object
      */
-    @Benchmark
-    public void exp(Blackhole hole, TestData data) {
-        float ww = Std.exp(data.w);
-        hole.consume(ww);
-        float xx = Std.exp(data.x);
-        hole.consume(xx);
-        float yy = Std.exp(data.y);
-        hole.consume(yy);
-        float zz = Std.exp(data.z);
-        hole.consume(zz);
+    private static PhysicsSystem createSystem() {
+        int numBpLayers = 1;
+        int numObjLayers = 1;
+        MapObj2Bp mapObj2Bp = new MapObj2Bp(numObjLayers, numBpLayers).add(0, 0);
+        ObjVsBpFilter objVsBpFilter = new ObjVsBpFilter(numObjLayers, numBpLayers);
+        ObjVsObjFilter objVsObjFilter = new ObjVsObjFilter(numObjLayers);
+
+        int maxBodies = 1_800;
+        int numBodyMutexes = 0; // 0 means "use the default value"
+        int maxBodyPairs = 65_536;
+        int maxContacts = 20_480;
+        PhysicsSystem result = new PhysicsSystem();
+        result.init(maxBodies, numBodyMutexes, maxBodyPairs, maxContacts,
+                mapObj2Bp, objVsBpFilter, objVsObjFilter);
+
+        return result;
     }
 
     /**
-     * Test {@code Std.pow()} for single-precision powers.
+     * Print basic library information to the specified stream during
+     * initialization.
      *
-     * @param hole the consumer to use (not null)
-     * @param data the test data to use (not null)
+     * @param printStream where to print the information (not null)
      */
-    @Benchmark
-    public void pow(Blackhole hole, TestData data) {
-        float xw = Std.pow(data.x, data.w);
-        hole.consume(xw);
-        float yx = Std.pow(data.y, data.x);
-        hole.consume(yx);
-        float zy = Std.pow(data.z, data.y);
-        hole.consume(zy);
-    }
+    private static void printLibraryInfo(PrintStream printStream) {
+        printStream.print("Jolt JNI version ");
+        printStream.print(Jolt.versionString());
+        printStream.print('-');
 
-    /**
-     * Test {@code Std.sin()} for single-precision sine ratios.
-     *
-     * @param hole the consumer to use (not null)
-     * @param data the test data to use (not null)
-     */
-    @Benchmark
-    public void sin(Blackhole hole, TestData data) {
-        float ww = Std.sin(data.w);
-        hole.consume(ww);
-        float xx = Std.sin(data.x);
-        hole.consume(xx);
-        float yy = Std.sin(data.y);
-        hole.consume(yy);
-        float zz = Std.sin(data.z);
-        hole.consume(zz);
-    }
+        String buildType = Jolt.buildType();
+        printStream.print(buildType);
 
-    /**
-     * Test {@code Std.sqrt()} for single-precision square roots.
-     *
-     * @param hole the consumer to use (not null)
-     * @param data the test data to use (not null)
-     */
-    @Benchmark
-    public void sqrt(Blackhole hole, TestData data) {
-        float xx = Std.sqrt(data.x);
-        hole.consume(xx);
-        float yy = Std.sqrt(data.y);
-        hole.consume(yy);
-        float zz = Std.sqrt(data.z);
-        hole.consume(zz);
+        if (Jolt.isDoublePrecision()) {
+            printStream.print("Dp");
+        } else {
+            printStream.print("Sp");
+        }
+
+        printStream.println(" initializing...");
+        printStream.println();
+        printStream.flush();
     }
 }
