@@ -22,7 +22,6 @@ SOFTWARE.
 package com.github.stephengold.ubench;
 
 import com.jme3.math.FastMath;
-import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.infra.Blackhole;
@@ -44,7 +43,7 @@ public class Jme {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void acos(Blackhole hole, TestData data) {
         float ww = com.jme3.math.FastMath.acos(data.w);
         hole.consume(ww);
@@ -61,7 +60,7 @@ public class Jme {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void atan(Blackhole hole, TestData data) {
         float ww = FastMath.atan(data.w);
         hole.consume(ww);
@@ -80,7 +79,7 @@ public class Jme {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void cos(Blackhole hole, TestData data) {
         float ww = FastMath.cos(data.w);
         hole.consume(ww);
@@ -99,7 +98,7 @@ public class Jme {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void exp(Blackhole hole, TestData data) {
         float ww = FastMath.exp(data.w);
         hole.consume(ww);
@@ -117,7 +116,7 @@ public class Jme {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void pow(Blackhole hole, TestData data) {
         float xw = FastMath.pow(data.x, data.w);
         hole.consume(xw);
@@ -134,7 +133,7 @@ public class Jme {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void sin(Blackhole hole, TestData data) {
         float ww = FastMath.sin(data.w);
         hole.consume(ww);
@@ -153,7 +152,7 @@ public class Jme {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void sqrt(Blackhole hole, TestData data) {
         float xx = FastMath.sqrt(data.x);
         hole.consume(xx);

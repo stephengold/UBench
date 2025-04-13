@@ -22,7 +22,6 @@ SOFTWARE.
 package com.github.stephengold.ubench;
 
 import org.apache.commons.math3.util.FastMath;
-import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.infra.Blackhole;
@@ -44,7 +43,7 @@ public class Apache {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void acos(Blackhole hole, TestData data) {
         float ww = (float) FastMath.acos(data.w);
         hole.consume(ww);
@@ -61,7 +60,7 @@ public class Apache {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void atan(Blackhole hole, TestData data) {
         float ww = (float) FastMath.atan(data.w);
         hole.consume(ww);
@@ -80,7 +79,7 @@ public class Apache {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void cos(Blackhole hole, TestData data) {
         float ww = (float) FastMath.cos(data.w);
         hole.consume(ww);
@@ -99,7 +98,7 @@ public class Apache {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void exp(Blackhole hole, TestData data) {
         float ww = (float) FastMath.exp(data.w);
         hole.consume(ww);
@@ -118,7 +117,7 @@ public class Apache {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void sin(Blackhole hole, TestData data) {
         float ww = (float) FastMath.sin(data.w);
         hole.consume(ww);
@@ -137,7 +136,7 @@ public class Apache {
      * @param hole the consumer to use (not null)
      * @param data the test data to use (not null)
      */
-    @Benchmark
+    //@Benchmark
     public void sqrt(Blackhole hole, TestData data) {
         float xx = (float) FastMath.sqrt(data.x);
         hole.consume(xx);
