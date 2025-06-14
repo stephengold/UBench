@@ -23,4 +23,4 @@ jsnaploader = "io.github.electrostat-lab:snaploader:1.1.1-stable"
 
 [plugins]
 
-jmh = { id = "me.champeau.jmh", version = "0.7.2" }
+jmh = { id = "me.champeau.jmh", version = "0.7.3" }
